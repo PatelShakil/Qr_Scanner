@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activity.SignupActivity"
-    android:layout_marginHorizontal="10dp"
+    android:padding="10dp"
     android:gravity="center">
     <androidx.cardview.widget.CardView
         android:layout_width="150dp"

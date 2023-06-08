@@ -11,6 +11,7 @@ import com.resoluteai.qrscanner.databinding.ActivityMainBinding
 import com.resoluteai.qrscanner.models.QRCode
 import io.github.g00fy2.quickie.QRResult
 import io.github.g00fy2.quickie.ScanQRCode
+import io.github.g00fy2.quickie.config.ScannerConfig
 import java.util.Date
 
 class MainActivity : AppCompatActivity() {

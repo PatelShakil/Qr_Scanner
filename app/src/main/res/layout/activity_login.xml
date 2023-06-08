@@ -4,46 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.LoginActivity"
-    android:layout_marginHorizontal="10dp"
-    android:gravity="center">
+    android:padding="10dp"
+    tools:context=".activity.LoginActivity">
+
     <androidx.cardview.widget.CardView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:cardElevation="30dp"
-        app:cardCornerRadius="15dp">
+        app:cardCornerRadius="15dp"
+        app:cardElevation="30dp">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_qr"
             app:tint="@color/purple_500" />
     </androidx.cardview.widget.CardView>
+
     <EditText
+        android:id="@+id/email_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
         android:hint="Enter Email"
-        android:layout_marginVertical="5dp"
-        android:inputType="textEmailAddress"
-        android:id="@+id/email_login"/>
+        android:inputType="textEmailAddress" />
+
     <EditText
+        android:id="@+id/pass_login"
         android:layout_width="match_parent"
-        android:layout_marginVertical="5dp"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
         android:hint="Enter Password"
-        android:inputType="textPassword"
-        android:id="@+id/pass_login"/>
+        android:inputType="textPassword" />
+
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/login_btn"/>
+        android:text="Login" />
 
     <TextView
+        android:id="@+id/signup_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have account? Click here..."
         android:layout_marginVertical="5dp"
-        android:id="@+id/signup_text"/>
+        android:text="Don't have account? Click here..." />
 
 </LinearLayout>
